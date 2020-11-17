@@ -440,7 +440,6 @@ strong {
 .wrapper {
     width: 650px;
     margin: 0 auto;
-    margin-top: 180px;
     position:relative
 }
 
@@ -711,7 +710,6 @@ footer {
     div.wrapper {
         width: auto;
         margin:0
-        margin-top: 180px;
     }
 
     nav {
