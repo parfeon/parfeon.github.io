@@ -1,5 +1,5 @@
 <ul style="font-size: 16px; list-style-type: none; position: fixed; left: 50%; margin-left: -325px">
-	{% assign pages_data = site.data§ | map: "pages" %}
+	{% assign pages_data = site.data§ | map: "pages" | compact %}
 {% for p in pages_data %}
   	<li style="float: left">
   		{% if p.title == "Home" %}
