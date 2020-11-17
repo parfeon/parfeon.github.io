@@ -2,7 +2,7 @@
 	{% assign pages_data = site.data§ | map: "pages" | compact %}
 {% for p in pages_data %}
   	<li style="float: left">
-  		{% if p.title == "Home" %}
+  		{% if p.title == p.title %}
 		<a href="{{ p.url }}" style="display: block; color: white; text-align: center; padding: 16px; text-decoration: underline;">{{ p.title }}</a>
 		{% else %}
 		<a href="{{ p.url }}" style="display: block; color: white; text-align: center; padding: 16px; text-decoration: none;">{{ p.title }}</a>
