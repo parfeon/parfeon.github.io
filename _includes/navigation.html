@@ -1,7 +1,8 @@
 <ul style="font-size: 16px; list-style-type: none; position: fixed; left: 50%; margin-left: -325px">
-{% for p in site.data.pages %}
+	{% assign pages_data = site.data§ | map: "pages" %}
+{% for p in pages_data %}
   	<li style="float: left">
-  		{% if p.title == page.title %}
+  		{% if p.title == "Home" %}
 		<a href="{{ p.url }}" style="display: block; color: white; text-align: center; padding: 16px; text-decoration: underline;">{{ p.title }}</a>
 		{% else %}
 		<a href="{{ p.url }}" style="display: block; color: white; text-align: center; padding: 16px; text-decoration: none;">{{ p.title }}</a>

@@ -3,3 +3,4 @@ collections:
   gallery:
     output: true
     layout: default
+    sort_by: title
