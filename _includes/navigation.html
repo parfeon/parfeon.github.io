@@ -3,7 +3,7 @@
   	<li style="float: left">
   		{% if p.title == page.title %}
 		<a href="{{ page.url }}" style="display: block; color: white; text-align: center; padding: 16px; text-decoration: underline;">{{ p.title }}</a>
-		{% elsif p.title == page.title %}
+		{% else %}
 		<a href="{{ page.url }}" style="display: block; color: white; text-align: center; padding: 16px; text-decoration: none;">{{ p.title }}</a>
 		{% endif %}
 	</li>
