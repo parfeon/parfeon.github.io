@@ -44,5 +44,6 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 
 {% for image in site.gallery %}
+{{ image.title }}
 [![{{ image.title }}]({{ image.imageUrl }})]({{ image.url }})
 {% endfor %}
